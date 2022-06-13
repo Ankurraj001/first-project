@@ -1,11 +1,17 @@
 <script setup>
+import {ref} from 'vue'
     const name="Ankur";
+    let count=ref(0);
+    const increment = () => {
+        console.log(count.value)
+        count.value++
+    }
 </script>
 
 <template>
 <div>{{name}}</div>
-<div>Mini Sharma</div>
-<button class="bg-red">Change Mini Color</button>
+<div>Count is:{{count}}</div>
+<button @click="increment">+</button>
 </template>
 
 <style>
