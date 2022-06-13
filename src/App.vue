@@ -1,8 +1,10 @@
 <script setup>
+import 'bootstrap'
+import Todo from './components/Todo.vue';
 </script>
 
 <template>
-  Updated Text
+  <Todo />
 </template>
 
 <style>
