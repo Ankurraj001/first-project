@@ -7,8 +7,10 @@ import Mini from './components/Mini.vue'
 </script>
 
 <template>
-  <Todo />
-  <Mini />
+  <div class="">
+    <!-- <Todo /> -->
+    <Mini />
+  </div>
 </template>
 
 <style>
