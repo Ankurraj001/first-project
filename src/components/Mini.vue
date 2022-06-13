@@ -2,7 +2,7 @@
 </script>
 
 <template>
-<div>Minii Sharma</div>
+<div>Mini Sharma</div>
 </template>
 
 <style>
