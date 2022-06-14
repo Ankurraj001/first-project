@@ -16,22 +16,18 @@ let tasks = ref([
     }
 
 ]);
-console.log("first", tasks);
 const task = ref('')
 const submitTask = () => {
-    console.log("tasks", tasks.value);
-    console.log("ref", task.value);
     if(task.value === '') alert('Enter some value');
     else {
     tasks.value.push({
         name: task.value,
         status: "to-do"
     })
-    task = '';
+    task.value = '';
     }
 }
 const deleteTask = (index) => {
-    console.log("delete", index);
     tasks.value.splice(index,1);
 
 }
@@ -54,7 +50,7 @@ const deleteTask = (index) => {
                 </tr>
             </thead>
             <tbody>
-                <tr v-for="(task, index) in tasks" :key="index" ref="tasks">
+                <tr v-for="(task, index) in tasks" :key="index">
                     <td>{{ task.name }}</td>
                     <td>{{ task.status }}</td>
                     <td>
