@@ -1,17 +1,22 @@
 <script setup>
 import {ref} from 'vue'
+import { useCounterStore } from '@/store/counter'
     const name="Ankur";
-    let count=ref(0);
-    const increment = () => {
-        console.log(count.value)
-        count.value++
-    }
+    const counter = useCounterStore()
+    // let count=ref(0);
+    // const increment = () => {
+    //     count.value++
+    // }
+    // const decrement = () => {
+    //     count.value--
+    // }
 </script>
 
 <template>
 <div>{{name}}</div>
-<div>Count is:{{count}}</div>
-<button @click="increment">+</button>
+<div>Count is:{{counter.count}}</div>
+<button @click="counter.increment">+</button>
+<button @click="counter.decrement">-</button>
 </template>
 
 <style>

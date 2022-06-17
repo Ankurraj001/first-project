@@ -17,7 +17,7 @@ import Mini from './components/Mini.vue'
 @import './assets/base.css';
 
 #app {
-  max-width: 1280px;
+  max-width: 500px;
   margin: 0 auto;
   padding: 2rem;
 
