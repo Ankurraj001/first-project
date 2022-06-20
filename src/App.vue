@@ -9,7 +9,7 @@ import Mini from './components/Mini.vue'
 <template>
   <div class="">
     <Todo />
-    <!-- <Mini /> -->
+    <Mini />
   </div>
 </template>
 
