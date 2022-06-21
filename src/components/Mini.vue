@@ -17,6 +17,7 @@ import { useCounterStore } from '@/store/counter'
 <div>Count is:{{counter.count}}</div>
 <button @click="counter.increment">+</button>
 <button @click="counter.decrement">-</button>
+<button @click="counter.sayHello">Say Hello</button>
 </template>
 
 <style>
